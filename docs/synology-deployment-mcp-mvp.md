@@ -99,7 +99,6 @@ Container image optional.
 ### server_info
 
 Returns:
-
 - version
 - build metadata
 - supported capabilities
@@ -110,7 +109,6 @@ Returns:
 Lists available capability groups.
 
 Example:
-
 - package_management
 - logging
 - validation
@@ -121,7 +119,6 @@ Example:
 Performs a non-destructive capability probe.
 
 Examples:
-
 - Package API reachable
 - Log API reachable
 - Container Manager reachable
@@ -176,7 +173,6 @@ Lists uploaded packages.
 ### inspect_spk
 
 Extracts:
-
 - package name
 - version
 - architecture
@@ -192,7 +188,6 @@ Discovers package installation fields.
 Returns typed schema.
 
 Supported field types:
-
 - string
 - integer
 - boolean
@@ -206,14 +201,12 @@ Validates wizard values prior to install.
 ### install_spk
 
 Inputs:
-
 - package identifier
 - wizard values
 
 ### upgrade_spk
 
 Inputs:
-
 - package identifier
 - wizard values
 
@@ -242,7 +235,6 @@ Example:
 Runs deployment validation profile.
 
 Supported checks:
-
 - API reachable
 - service running
 - TCP port open
@@ -273,7 +265,6 @@ Schema:
 ### get_deployment_report
 
 Returns:
-
 - timeline
 - errors
 - warnings
@@ -309,7 +300,6 @@ or
 Only explicitly implemented operations.
 
 No:
-
 - shell execution
 - arbitrary file access
 - arbitrary DSM API execution
@@ -317,7 +307,6 @@ No:
 ### Secrets
 
 Secrets:
-
 - accepted
 - transmitted
 - redacted on retrieval
@@ -327,7 +316,6 @@ Never exposed in logs.
 ## Synology Compatibility
 
 Target baseline:
-
 - DSM 7.2+
 - DSM 7.4+
 
